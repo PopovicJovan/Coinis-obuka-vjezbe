@@ -17,7 +17,6 @@ function avg(array){
 }
 
 
-
 for(let student of studenti){
     let a = avg(student.ocjene)
     a > 8.5 ? console.log(student) : console.log(student.ime)
