@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import MovieCard from "../components/MovieCard.jsx";
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import NavBar from "../components/NavBar.jsx";
 
 const MainPage = () => {
     const [movies, setMovies] = useState();
@@ -25,13 +26,19 @@ const MainPage = () => {
 
     const handleInputChange = (e) => {
         setPage(1);
-        setFilteredMovies(movies.filter(movie => movie.title.toLowerCase().includes(e.target.value.toLowerCase())));
+        setFilteredMovies(
+            movies.filter(
+                movie => movie.title.toLowerCase()
+                    .includes(e.target.value.toLowerCase())
+            )
+        );
     }
 
 
 
     return (
         <div>
+            <NavBar />
             <div className={"w-50 mx-auto d-flex justify-content-center align-items-center gap-3"}>
                 <input type="text" className={"form-control my-3 w-50"} placeholder={"Search"} onChange={handleInputChange} />
                 <button className={"h-25 btn btn-primary"} style={{"width": "100px"}} type={"button"}>Search</button>

@@ -1,7 +1,7 @@
 
-const MovieCard = ({img, year, title, rating, genre}) => {
+const MovieCard = ({img, year, title, rating, genre, className}) => {
     return (
-        <div className="card my-w-18" style={{"height": "650px"}}>
+        <div className={"card my-w-18 " + className} style={{"height": "650px"}}>
             <img className="card-img-top w-100 h-75" src={img} alt="Card image cap"/>
             <div className="card-body">
                 <h5 className="card-title text-center fw-bold">{title}</h5>
