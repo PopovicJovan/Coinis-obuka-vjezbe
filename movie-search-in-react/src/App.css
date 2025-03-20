@@ -12,7 +12,7 @@
     width: 100%;
 }
 
-nav{
+#nav{
     height: 10vh;
     background-color: #213547;
     display: flex;
@@ -20,7 +20,7 @@ nav{
     padding-right: 50px;
 }
 
-nav ul{
+nav>ul{
     display: flex;
     align-content: center;
     list-style: none;

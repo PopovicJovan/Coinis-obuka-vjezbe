@@ -1,7 +1,7 @@
 
 const NavBar = () => {
     return (
-        <nav>
+        <nav id={"nav"}>
             <ul>
                 <li><a href={"/login"}><h1>LOGIN</h1></a></li>
                 <li><a href={"/register"}><h1>REGISTER</h1></a></li>
