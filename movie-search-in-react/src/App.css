@@ -1,0 +1,13 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.my-w-18{
+    width: 18%;
+}
+
+.my-w-85{
+    width: 85%;
+}
+
+#root{
+    width: 100%;
+}
