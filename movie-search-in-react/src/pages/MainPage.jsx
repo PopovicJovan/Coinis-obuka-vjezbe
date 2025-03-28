@@ -62,7 +62,7 @@ const MainPage = () => {
                         ? filteredMovies.length / perPage :
                         Math.ceil(filteredMovies.length / perPage)
                 }
-                                       className={"align-items-center"}
+                                       className={"align-items-center mb-5"}
                                 onChange={(_, v) => setPage(v)}
                     page={page}/>
                     }
